@@ -1,0 +1,13 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300vh;
+    width: 100%;
+}
+
+.about-container,
+.experience-container,
+.projects-container {
+    scroll-snap-align: start;
+}

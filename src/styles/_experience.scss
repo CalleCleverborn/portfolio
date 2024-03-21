@@ -1,0 +1,97 @@
+@use "variables" as v;
+@use "mixins";
+
+.experience-container {
+    min-height: 100vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include mixins.desktop {
+        padding-left: v.$sidepaddingdesktop;
+        padding-right: v.$sidepaddingdesktop;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.experience-logo-box {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-wrap: wrap;
+
+    @include mixins.desktop {
+        flex-wrap: nowrap;
+        width: auto;
+    }
+}
+
+.school-box {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    @include mixins.desktop {
+        flex-direction: row;
+        width: auto;
+        gap: 40px;
+    }
+}
+
+.school-item {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    @include mixins.desktop {
+        width: auto;
+    }
+}
+
+.school-logo {
+    width: 50px;
+    height: 50px;
+    @include mixins.desktop {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.text-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-logo {
+    font-size: 5em;
+    color: rgb(23, 46, 255);
+}
+
+p {
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0;
+}

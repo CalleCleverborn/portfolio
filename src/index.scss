@@ -1,0 +1,30 @@
+@use "./styles/variables" as v;
+@use "./styles/header";
+@use "./styles/about";
+@use "./styles/experience";
+@use "./styles/projects";
+@use "./styles/layout";
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", serif;
+}
+
+body,
+html {
+    scroll-snap-type: proximity;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y proximity;
+}
